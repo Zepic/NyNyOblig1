@@ -34,7 +34,6 @@ namespace Oblig6
             if (DeathYear != 0)
                 returnInfo += " Død: " + DeathYear;
 
-
             if (Father != null)
             {
                 returnInfo += " Far:";
