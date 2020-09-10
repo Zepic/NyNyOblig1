@@ -11,9 +11,6 @@ namespace Oblig6
         {
             _people = new List<Person>(people);
         }
-        //_people[2].GetDescription()
-        //char id = (char) charId;
-        //int intId = (char) charId;
         public string FindPerson(string number)
         {
             int id = int.Parse(number);
@@ -27,7 +24,7 @@ namespace Oblig6
                     child.Append(person.GetChild() + "\n");
                 }
             }
-            string hasChild = child.Length > 0 ? "\n  Barn:\n" : ""; //forkortet if settning
+            string hasChild = child.Length > 0 ? "\n  Barn:\n" : "";
             return foundPerson + hasChild + child;
         }
 
@@ -60,36 +57,4 @@ namespace Oblig6
             return "Invalid Command";
         }
     }
-    //if (command == "vis 1")
-    //{
-    //    return _people[0].GetDescription() + FindChild(1);
-    //}
-    //if (command == "vis 2")
-    //{
-    //    return _people[1].GetDescription() + FindChild(2);
-    //}
-    //if (command == "vis 3")
-    //{
-    //    return _people[2].GetDescription() + FindChild(3);
-    //}
-    //if (command == "vis 4")
-    //{
-    //    return _people[3].GetDescription() + FindChild(4);
-    //}
-    //if (command == "vis 5")
-    //{
-    //    return _people[4].GetDescription() + FindChild(5);
-    //}
-    //if (command == "vis 6")
-    //{
-    //    return _people[5].GetDescription() + FindChild(6);
-    //}
-    //if (command == "vis 7")
-    //{
-    //    return _people[6].GetDescription() + FindChild(7);
-    //}
-    //if (command == "vis 8")
-    //{
-    //    return _people[7].GetDescription() + FindChild(8);
-    //}
 }
