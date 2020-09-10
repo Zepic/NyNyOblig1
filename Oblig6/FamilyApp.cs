@@ -11,11 +11,12 @@ namespace Oblig6
         {
             _people = new List<Person>(people);
         }
+        
         public string FindPerson(string number)
         {
             int id = int.Parse(number);
             var child = new StringBuilder();
-            var foundPerson =_people[id].GetDescription();
+            var foundPerson =_people[id - 1].GetDescription();
 
             foreach (var person in _people)
             {
